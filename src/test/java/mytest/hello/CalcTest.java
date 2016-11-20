@@ -7,17 +7,24 @@ import org.junit.Test;
 public class CalcTest {
 
 	@Test
-	public void testAdding1() {
+	public void testAdd1() {
 		Calc target = new Calc();
 		target.setInitial(0);
 		int expected = 3;
-		assertEquals(expected, target.adding(4));
+		assertEquals(expected, target.add(4));
 	}
 	
 	@Test
-	public void testAdding2() {
+	public void testAdd2() {
 		Calc target = new Calc();
 		int expected = 3;
-		assertEquals(expected, target.adding(4));
+		assertEquals(expected, target.add(4));
+	}
+
+	@Test
+	public void testSub1() {
+		Calc target = new Calc();
+		int expected = 1;
+		assertEquals(expected, target.sub(0));
 	}
 }

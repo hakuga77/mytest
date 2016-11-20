@@ -12,9 +12,15 @@ public class Calc {
 		this.initial = initial;
 	}
 	
-	public int adding(int n) {
+	public int add(int n) {
 		int result;
-		result = initial + n - 1;
+		result = initial + n;
+		return result;
+	}
+	
+	public int sub(int n) {
+		int result;
+		result = initial - n;
 		return result;
 	}
 	
